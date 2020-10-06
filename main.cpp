@@ -4,32 +4,26 @@ using namespace std;
 
 int main() {
 
-int a;
-a =1;
-float f;
-char c; 
-short s;
-double d;
-long l;
+string dato; //Variable tipo cadena que tomara los datos de entrada 
+cin >> dato;
+
+if (dato == "char")
+{
+    cout << sizeof(char)<<endl;
+}else if(dato == "int")
+{
+    cout << sizeof(int)<< endl;
+}else if (dato == "short")
+{
+    cout << sizeof(short)<< endl;
+}else if (dato == "float")
+{
+    cout << sizeof(float)<< endl;
+}
 
 
-    cin >> a;
-    cout<< sizeof(a)<< endl;
 
-    cin >> f;
-    cout<< sizeof(f)<< endl;
 
-    cin >> c;
-    cout<< sizeof(c)<< endl;
-    
-    cin >> s;
-    cout<< sizeof(s)<< endl;
-
-    cin >> d;
-    cout<< sizeof(d)<< endl;
-
-    cin >> l;
-    cout<< sizeof(l)<< endl;
-    
+   
     return 0;
 }
